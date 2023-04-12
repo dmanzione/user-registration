@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { NgModule } from '@angular/core';
 
-  
+  import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 
@@ -19,6 +19,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { StateTrackerService } from './services/state-tracker.service';
 
   
 
@@ -35,7 +36,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
 
     BrowserAnimationsModule,
-
+    HttpClientModule,
     RouterLink,
     AppRoutingModule,
 
@@ -52,7 +53,7 @@ import { AppRoutingModule } from './app-routing.module';
 
   ],
   exports:[MatButtonModule,MatInputModule,MatListModule,FormsModule,ReactiveFormsModule,BrowserAnimationsModule,BrowserModule,AppRoutingModule,RouterLink],
-  providers: [],
+  providers: [StateTrackerService],
 
   bootstrap: [AppComponent]
 
