@@ -3,6 +3,6 @@ export interface Person {
     firstName:string,
     middleName:string,
     lastName:string,
-    dob:Date,
+    dob:Date | string,
     
 }

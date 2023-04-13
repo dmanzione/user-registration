@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { setTheme } from 'ngx-bootstrap/utils';
+import UserBuilder from './models/UserBuilder';
+
 
 @Component({
   selector: 'app-root',
@@ -8,8 +11,14 @@ import { setTheme } from 'ngx-bootstrap/utils';
 })
 export class AppComponent {
   title = 'user-registration';
-   constructor() {
+  
+   
+
+
+
+   constructor() { 
       setTheme('bs5');
-      
    }
+      
+   
 }

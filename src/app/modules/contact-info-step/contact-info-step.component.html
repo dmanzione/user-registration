@@ -1,1 +1,28 @@
-<p>contact-info-step works!</p>
+<div class="row">
+    <div >
+
+        <div class="bg-white rounded shadow-5-strong p-3">
+
+            <form class="form p-5 card-body" [formGroup]="contactForm">
+                <div class="card-header mb-3">
+                    <p class="h3"> Contact Information </p>
+                </div>
+                <div class="mb-3 ">
+                    <label for="email" class="form-label">Email</label>
+                    <span class="asterisks"> * </span>
+                    <input type="email" class="form-control" id="email" placeholder="Email Address"
+                        formControlName="email" required>
+                </div>
+                <div class="mb-3 ">
+                    <label for="middleName" class="form-label">Phone Number</label>
+
+                    <input type="text" class="form-control" id="phone" placeholder="Enter Phone Number"
+                        formControlName="phone">
+                </div>
+                
+            <button type="button" class="btn btn-primary" routerLink="/address">Next</button>
+            </form>
+        </div>
+
+    </div>
+</div>

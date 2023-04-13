@@ -1,35 +1,20 @@
-import { Address } from "../models/address";
-import { ContactInformation } from "../models/contact-information";
-import { Person } from "../models/person";
-import { User } from "../models/user";
 
+import { Address } from './address';
+import { ContactInformation } from './contact-information';
+import { Person } from './person';
+import { User } from './user';
 
 export default class UserBuilder {
-  userBuilder!: UserBuilder;
-  static getBuilder(): UserBuilder {
-    return new UserBuilder();
-  }
-
   user: User;
+  
 
-  private constructor() {
-    this.user = {
-      id: undefined,
-      physicalAddress: {},
-      mailingAddress: {},
-      username: '',
-      password: '',
-      contact: {},
-      person: {},
-    };
+
+  constructor() {
+    this.user = {id:undefined, contact:{}, person:{},mailingAddress:{}, physicalAddress:{}, username:'',password:''};;
   }
 
-  static getBuilderWithUser(user: User): UserBuilder {
-    return new UserBuilder().withUser(user);
-  }
-  withUser(user: User): UserBuilder {
-    this.userBuilder.user = user;
-    return this;
+  getBuilder(): User {
+    return this.user;
   }
   withId(id: number | string | undefined) {
     this.user.id = id;

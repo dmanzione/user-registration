@@ -1,1 +1,76 @@
-<p>address-step works!</p>
+<div class="d-flex flex-row justify-content-center">
+
+    <form class="form p-5" formGroupName=“physicalAddress”>
+        <div>
+            <p class="p-3 fs-5"> Physical Address </p>
+        </div>
+        <div class="mb-3 ">
+            <label for="firstName" class="form-label">Address 1</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="firstName" formControlName="firstName" required>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Address 2</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="lastName" formControlName="lastName">
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label">City</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="number" formControlName="number"
+                placeholder="Enter your phone number">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">State</label>
+            <span class="asterisks"> * </span>
+            <input type="email" class="form-control" id="email" formControlName="email"
+                placeholder="Please enter valid email ">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Zip Code</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="email" formControlName="email"
+                placeholder="Please enter zip code">
+        </div>
+
+      
+    </form>
+
+
+    <form class="form p-5" formGroupName=“mailingAddress”>
+        <div>
+            <p class="p-3 fs-5"> Mailing Address </p>
+        </div>
+        <div class="mb-3 ">
+            <label for="firstName" class="form-label">Address 1</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="firstName" formControlName="firstName" required>
+        </div>
+        <div class="mb-3">
+            <label for="lastName" class="form-label">Address 2</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="lastName" formControlName="lastName">
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label">City</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="number" formControlName="number"
+                placeholder="Enter your phone number">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">State</label>
+            <span class="asterisks"> * </span>
+            <input type="email" class="form-control" id="email" formControlName="email"
+                placeholder="Please enter valid email ">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Zip Code</label>
+            <span class="asterisks"> * </span>
+            <input type="text" class="form-control" id="email" formControlName="email"
+                placeholder="Please enter zip code">
+        </div>
+
+        
+    </form>
+</div>
+<div class="d-flex flex-row justify-content-center"><button type="submit" class="btn btn-primary float-center" routerLink="/credentials">Next</button></div>

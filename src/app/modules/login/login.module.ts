@@ -1,21 +1,28 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddressStepComponent } from './address-step.component';
+import { LoginComponent } from './login.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterLink, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+
+
+
 @NgModule({
+  declarations: [
+    LoginComponent
+  ],
   imports: [
     CommonModule,
-    BrowserModule,
-    ReactiveFormsModule,
+     BrowserModule,
+    FormsModule,
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    RouterLink,
   ],
-  declarations: [AddressStepComponent],
+  exports:[
+    LoginComponent
+  ]
 })
-export class AddressStepModule {}
+export class LoginModule { }
