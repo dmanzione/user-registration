@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { StateTrackerService } from 'src/app/services/state-tracker.service';
-import { Person } from '../../models/person';
+import { Person } from '../../models/personal-information';
 import UserBuilder from 'src/app/models/UserBuilder';
 
 @Component({

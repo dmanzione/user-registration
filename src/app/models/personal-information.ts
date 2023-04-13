@@ -1,4 +1,4 @@
-export interface Person {
+export interface PersonalInformation {
     id: number | string | undefined,
     firstName:string,
     middleName:string,

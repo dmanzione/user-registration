@@ -35,7 +35,7 @@ import { AddressStepModule } from './modules/address-step/address-step.module';
 import { ContactInfoStepComponent } from './modules/contact-info-step/contact-info-step.component';
 import { ContactInfoStepModule } from './modules/contact-info-step/contact-info-step.module';
 import { CommonModule } from '@angular/common';
-import UserBuilder from './models/UserBuilder';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -63,7 +63,7 @@ import UserBuilder from './models/UserBuilder';
   exports: [
    
   ],
-  providers: [StateTrackerService],
+  providers: [StateTrackerService, Router],
 
   bootstrap: [AppComponent],
 })

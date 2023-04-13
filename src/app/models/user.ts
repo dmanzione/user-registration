@@ -1,14 +1,27 @@
+import { StateTrackerService } from "../services/state-tracker.service";
 import { Address } from "./address";
 import { ContactInformation } from "./contact-information";
-import { Person } from "./person";
+import { Credentials } from "./credentials";
+import { PersonalInformation } from "./personal-information";
 
-export interface User {
-    id:number|string|undefined,
-    person:Person | object | number,
-    contact:ContactInformation | object | number,
-    physicalAddress:Address | object | number,
-    mailingAddress:Address | object | number,
+export default class User {
 
-    username:string  ,
-    password:string
+    private personalInfo:PersonalInformation;
+    private contact: ContactInformation;
+    private physicalAddress:Address;
+    private mailingAddress:Address;
+    private creds:Credentials;
+
+
+constructor(formState:StateTrackerService) {
+    this.personalInfo = formState.personalInfo;
+    this.contact = formState.contact;
+    this.physicalAddress = formState.physicalAddress;
+    this.mailingAddress = formState.mailingAddress;
+    this.creds = formState.creds;
+
+
+}
+
+
 }
