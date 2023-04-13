@@ -63,7 +63,7 @@ import { CommonModule } from '@angular/common';
   exports: [
    
   ],
-  providers: [StateTrackerService, Router],
+  providers: [StateTrackerService, RouterModule],
 
   bootstrap: [AppComponent],
 })

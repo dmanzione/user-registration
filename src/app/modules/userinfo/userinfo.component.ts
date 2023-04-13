@@ -14,7 +14,7 @@ import { StateTrackerService } from 'src/app/services/state-tracker.service';
 export class UserinfoComponent {
 
   user!:User;
-  router: Router;
+  router!: Router;
  
   constructor(private state:StateTrackerService, router:Router){
    

@@ -1,4 +1,5 @@
-<div class="d-flex flex-row justify-content-center">
+<div class="bg-white rounded shadow-5-strong p-5"> 
+<form class="d-flex flex-row justify-content-center" [formGroup]="addresses">
 
     <form class="form p-5" formGroupName=“physicalAddress”>
         <div>
@@ -6,29 +7,29 @@
         </div>
         <div class="mb-3 ">
             <label for="firstName" class="form-label">Address 1</label>
-            <span class="asterisks"> * </span>
-            <input type="text" class="form-control" id="firstName" formControlName="firstName" required>
+           
+            <input type="text" class="form-control" id="firstName" formControlName="addressLine1" placeholder="Enter your street address" required>
         </div>
         <div class="mb-3">
             <label for="lastName" class="form-label">Address 2</label>
-            <span class="asterisks"> * </span>
-            <input type="text" class="form-control" id="lastName" formControlName="lastName">
+           
+            <input type="text" class="form-control" id="lastName" formControlName="addressLine2"  placeholder="Enter your apartment or house number if needed">
         </div>
         <div class="mb-3">
             <label for="number" class="form-label">City</label>
-            <span class="asterisks"> * </span>
+           
             <input type="text" class="form-control" id="number" formControlName="number"
                 placeholder="Enter your phone number">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">State</label>
-            <span class="asterisks"> * </span>
+           
             <input type="email" class="form-control" id="email" formControlName="email"
                 placeholder="Please enter valid email ">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Zip Code</label>
-            <span class="asterisks"> * </span>
+           
             <input type="text" class="form-control" id="email" formControlName="email"
                 placeholder="Please enter zip code">
         </div>
@@ -43,34 +44,35 @@
         </div>
         <div class="mb-3 ">
             <label for="firstName" class="form-label">Address 1</label>
-            <span class="asterisks"> * </span>
-            <input type="text" class="form-control" id="firstName" formControlName="firstName" required>
+           
+            <input type="text" class="form-control" id="firstName" formControlName="addressLine1" placeholder="Enter your street address" required>
         </div>
         <div class="mb-3">
             <label for="lastName" class="form-label">Address 2</label>
-            <span class="asterisks"> * </span>
-            <input type="text" class="form-control" id="lastName" formControlName="lastName">
+           
+            <input type="text" class="form-control" id="lastName" formControlName="addressLine2"  placeholder="Enter your apartment or house number if needed">
         </div>
         <div class="mb-3">
             <label for="number" class="form-label">City</label>
-            <span class="asterisks"> * </span>
+           
             <input type="text" class="form-control" id="number" formControlName="number"
                 placeholder="Enter your phone number">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">State</label>
-            <span class="asterisks"> * </span>
+           
             <input type="email" class="form-control" id="email" formControlName="email"
                 placeholder="Please enter valid email ">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Zip Code</label>
-            <span class="asterisks"> * </span>
+           
             <input type="text" class="form-control" id="email" formControlName="email"
                 placeholder="Please enter zip code">
         </div>
 
         
     </form>
-</div>
+</form>
 <div class="d-flex flex-row justify-content-center"><button type="submit" class="btn btn-primary float-center" routerLink="/credentials">Next</button></div>
+</div>
