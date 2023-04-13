@@ -10,7 +10,7 @@
         </div>
         <div class="mb-3 ">
             <label for="firstName" class="form-label">First Name</label>
-            <span class="asterisks"> * </span>
+           
             <input type="text" class="form-control" id="firstName" placeholder="First Name" formControlName="firstName" required>
         </div>
         <div class="mb-3 ">
@@ -20,7 +20,7 @@
         </div>
         <div class="mb-3 ">
             <label for="lastName" class="form-label">Last Name</label>
-            <span class="asterisks"> * </span>
+           
             <input type="text" class="form-control" id="lastName" placeholder="Enter your last name" formControlName="lastName" required>
         </div>
         <div class="mb-3 ">
@@ -28,7 +28,7 @@
            
             <input type="date" class="form-control" id="dob" formControlName="dob" >
         </div>
-     <button type="button"  class="btn btn-primary" routerLink="/contact">Next</button>
+     <button type="submit"  class="btn btn-primary" (click) = "next()">Next</button>
     
     </form>
     </div>

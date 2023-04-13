@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 import { StateTrackerService } from 'src/app/services/state-tracker.service';
 
 
@@ -21,6 +22,16 @@ export class RegistrationComponent {
     lastName: new FormControl<string>(this.stateTracker.personalInfo.lastName),
     dob: new FormControl<Date|string>(this.stateTracker.personalInfo.dob),
   });
+  activatedRoute: ActivatedRoute;
 
-  constructor(private stateTracker: StateTrackerService) {}
+  next(){
+    
+    
+  }
+
+  constructor(private stateTracker: StateTrackerService, private router:Router,_activatedRoute:ActivatedRoute) {
+    this.activatedRoute = _activatedRoute;
+    this.router = router;
+    
+  }
 }
