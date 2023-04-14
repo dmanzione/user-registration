@@ -14,14 +14,16 @@ export class AddressStepComponent  {
  physicalAddress!: Address;
   mailingAddress!: Address;
   addresses!: FormGroup;
+  mailingAddressForm: any;
+  physicalAddressForm!: FormGroup<{ addressLine1: FormControl<string | null>; addressLine2: FormControl<string | null>; city: FormControl<string | null>; state: FormControl<string | null>; zip: FormControl<string | null>; }>;
   constructor(private stateTracker:StateTrackerService){
     this.physicalAddress = stateTracker.physicalAddress;
     this.mailingAddress = stateTracker.mailingAddress;
   }
 
   ngOnInit() {
-   this.addresses= new FormGroup({
-    mailingAddress: new FormGroup({
+ 
+    this.mailingAddressForm =  new FormGroup({
       
       addressLine1: new FormControl<string>(this.mailingAddress.addressLine1),
       addressLine2: new FormControl<string>(this.mailingAddress.addressLine2),
@@ -29,18 +31,15 @@ export class AddressStepComponent  {
       state: new FormControl<string>(this.mailingAddress.state),
       zip: new FormControl<string>(this.mailingAddress.zipCode),
       
-    }),
-    physicalAddress: new FormGroup({
+    });
+    this.physicalAddressForm = new FormGroup({
       addressLine1: new FormControl<string>(this.physicalAddress.addressLine1),
       addressLine2: new FormControl<string>(this.physicalAddress.addressLine2),
       city: new FormControl<string>(this.physicalAddress.city),
       state: new FormControl<string>(this.physicalAddress.state),
       zip: new FormControl<string>(this.physicalAddress.zipCode),
-    }),
-  });
+    });
+  };
   }
   
 
-
-
-}

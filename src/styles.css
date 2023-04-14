@@ -1,1 +1,17 @@
 @import '~mdb-ui-kit/css/mdb.min.css';
+
+
+
+
+
+.card {
+position:absolute;
+width:50vw!important;
+height:fit-content;
+top:auto;
+bottom:auto;
+padding:auto;
+left:25vw;
+right:25vw;
+}
+

@@ -28,7 +28,7 @@ import { AddressStepComponent } from './modules/address-step/address-step.compon
 import { LoginComponent } from './modules/login/login.component';
 import { UserinfoModule } from './modules/userinfo/userinfo.module';
 import { RegistrationModule } from './modules/registration/registration.module';
-import { PersonalInfoStepModule } from './modules/personal-info-step/personal-info-step.module';
+
 import { LoginModule } from './modules/login/login.module';
 import { HomeModule } from './modules/home/home.module';
 import { AddressStepModule } from './modules/address-step/address-step.module';
@@ -44,6 +44,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     BrowserModule,
 
+
+    
     BrowserAnimationsModule,
     HttpClientModule,
     RouterLink,
@@ -54,17 +56,18 @@ import { CommonModule } from '@angular/common';
 
     UserinfoModule,
     RegistrationModule,
-    PersonalInfoStepModule,
+  
     LoginModule,
     HomeModule,
     AddressStepModule,
     ContactInfoStepModule
   ],
   exports: [
-   
+    RouterModule
   ],
-  providers: [StateTrackerService, RouterModule, ActivatedRoute],
+  providers: [StateTrackerService],
 
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}

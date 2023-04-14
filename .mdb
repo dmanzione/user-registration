@@ -1,0 +1,8 @@
+{
+  "projectName": "user-registration",
+  "meta": {
+    "type": "frontend"
+  },
+  "packageManager": "npm",
+  "hash": "8a4bc2bb"
+}

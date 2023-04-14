@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    pathMatch: 'full'
+
   },
 
   {
@@ -22,23 +22,23 @@ const routes: Routes = [
     path: 'register',
     component: RegistrationComponent,
   },
-      {
-        path: 'address',
-        component: AddressStepComponent,
-      },
-      {
-        path: 'contact',
-        component: ContactInfoStepComponent,
-      
-        
-        
-      },
-      {
-        path: 'credentials',
-        component: UserinfoComponent,
-      }
-      
-   
+  {
+    path: 'address',
+    component: AddressStepComponent,
+  },
+  {
+    path: 'contact',
+    component: ContactInfoStepComponent,
+
+
+
+  },
+  {
+    path: 'credentials',
+    component: UserinfoComponent,
+  }
+
+
 
 ];
 
@@ -46,4 +46,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

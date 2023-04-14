@@ -26,12 +26,21 @@ export class RegistrationComponent {
 
   next(){
     
+    if(this.personForm.invalid){
+      redAlert("Please make sure to fill out the form correctly")
+    }else {
+      this.router.navigateByUrl('contact')
+    }
     
   }
 
-  constructor(private stateTracker: StateTrackerService, private router:Router,_activatedRoute:ActivatedRoute) {
-    this.activatedRoute = _activatedRoute;
+  constructor(private stateTracker: StateTrackerService, private router:Router,activatedRoute:ActivatedRoute) {
+    this.activatedRoute = activatedRoute;
     this.router = router;
     
   }
 }
+function redAlert(arg0: string) {
+  
+}
+

@@ -6,6 +6,11 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink, RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { MatAnchor, MatButtonModule, MatFabAnchor } from '@angular/material/button';
+import { MatCommonModule, MatLineModule, MatNativeDateModule, MatOptionModule } from '@angular/material/core';
+import { MatError, MatFormFieldModule } from '@angular/material/form-field';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatInputModule } from '@angular/material/input';
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +20,17 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     RouterModule,
     AppRoutingModule,
     RouterLink,
+    MatButtonModule,
+    MatButtonModule,
+    MatCommonModule,
+  MatNativeDateModule,
+    MatFormFieldModule,
+    MatDividerModule,
+    MatInputModule,
+    MatLineModule,
+  MatOptionModule
+
+
   ],
   declarations: [AddressStepComponent],
 })

@@ -4,9 +4,10 @@ import { RegistrationComponent } from './registration.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterModule } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { StateTrackerService } from 'src/app/services/state-tracker.service';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -18,9 +19,12 @@ import { StateTrackerService } from 'src/app/services/state-tracker.service';
     CommonModule,
      BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,
     RouterModule,
+    RouterLink,
     AppRoutingModule,
+    MatFormFieldModule
   ],
   exports:[
     RegistrationComponent

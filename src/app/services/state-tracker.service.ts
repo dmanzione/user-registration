@@ -4,8 +4,6 @@ import { Credentials } from '../models/credentials';
 import { Address } from '../models/address';
 import { ContactInformation } from '../models/contact-information';
 import { PersonalInformation } from '../models/personal-information';
-import User from '../models/User';
-import UserBuilder from 'src/app/models/User';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +14,7 @@ export class StateTrackerService {
   contact: ContactInformation;
   personalInfo: PersonalInformation;
   creds:Credentials;
-  userBuilder!:UserBuilder;
+
  
 
   constructor() {

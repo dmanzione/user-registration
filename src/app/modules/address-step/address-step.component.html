@@ -1,9 +1,14 @@
-<div class="bg-white rounded shadow-5-strong p-5"> 
-<form class="d-flex flex-row justify-content-center" [formGroup]="addresses">
 
-    <form class="form p-5" formGroupName=“physicalAddress”>
-        <div>
-            <p class="p-3 fs-5"> Physical Address </p>
+
+
+
+
+
+
+<div class="tab-content card p-2">
+    <form id="physicalAddressForm"  class=" form p-2 card-body tab-pane active "[formGroup]="physicalAddressForm"><br>
+        <div class="card-header">
+            <p class="h3"> Physical Address </p>
         </div>
         <div class="mb-3 ">
             <label for="firstName" class="form-label">Address 1</label>
@@ -34,11 +39,12 @@
                 placeholder="Please enter zip code">
         </div>
 
-      
+        <div class="d-flex flex-row justify-content-center"><button type="submit" class="btn btn-primary float-center" routerLink="/credentials">Next</button></div>
     </form>
+</div>
+<div class="tab-content">
 
-
-    <form class="form p-5" formGroupName=“mailingAddress”>
+    <form id="mailingAddressForm"  class=" form p-5 container tab-pane "[formGroup]="mailingAddressForm">
         <div>
             <p class="p-3 fs-5"> Mailing Address </p>
         </div>
@@ -73,6 +79,9 @@
 
         
     </form>
-</form>
+
 <div class="d-flex flex-row justify-content-center"><button type="submit" class="btn btn-primary float-center" routerLink="/credentials">Next</button></div>
+
+
+
 </div>
