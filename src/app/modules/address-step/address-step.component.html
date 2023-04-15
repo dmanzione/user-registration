@@ -1,87 +1,109 @@
+<!--  -->
+<!--  -->
+<!--  -->
+<!-- <ul class="nav nav-tabs"> -->
+<!-- <li class="nav-item"> -->
+<!-- <a class="nav-link" data-toggle="tab" href="#menu1">Physical Address</a> -->
+<!-- </li> -->
+<!-- <li class="nav-item"> -->
+<!-- <a class="nav-link" data-toggle="tab" href="#menu2">Mailing Address</a> -->
+<!-- </li> -->
+<!-- </ul> -->
+<!--      -->
+<!--      -->
+<!--      -->
+<!--  -->
+<div class="container text-center flex-column width-fit-content">
+<div class="d-flex justify-content-around p-3 center" style="">
+    <form class="d-flex justify-content-between" [formGroup]="addresses">
 
 
 
 
+        <form id="physicalAddressForm" class="m-5" formGroupName="physicalAddress">
+              <div>
+                  <p class="p-3 fs-5"> Delivery Address </p>
+              </div>
+            <div class="mb-3 ">
+                <label for="firstName" class="form-label">Address 1</label>
+
+                <input type="text" class="form-control" id="firstName" formControlName="addressLine1"
+                    placeholder="Enter your street address" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Address 2</label>
+
+                <input type="text" class="form-control" id="lastName" formControlName="addressLine2"
+                    placeholder="Enter your apartment or house number if needed">
+            </div>
+            <div class="mb-3">
+                <label for="number" class="form-label">City</label>
+
+                <input type="text" class="form-control" id="number" formControlName="number"
+                    placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">State</label>
+
+                <input type="email" class="form-control" id="email" formControlName="email"
+                    placeholder="Please enter valid email ">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Zip Code</label>
+
+                <input type="text" class="form-control" id="email" formControlName="email"
+                    placeholder="Please enter zip code">
+            </div>
+
+         
+        </form>
 
 
+        <form id="mailingAddressForm" class="m-5" formGroupName="mailingAddress">
+            <div>
+                <p class="p-3 fs-5"> Mailing Address </p>
+            </div>
+            <div class="mb-3 ">
+                <label for="firstName" class="form-label">Address 1</label>
 
-<div class="tab-content card p-2">
-    <form id="physicalAddressForm"  class=" form p-2 card-body tab-pane active "[formGroup]="physicalAddressForm"><br>
-        <div class="card-header">
-            <p class="h3"> Physical Address </p>
-        </div>
-        <div class="mb-3 ">
-            <label for="firstName" class="form-label">Address 1</label>
-           
-            <input type="text" class="form-control" id="firstName" formControlName="addressLine1" placeholder="Enter your street address" required>
-        </div>
-        <div class="mb-3">
-            <label for="lastName" class="form-label">Address 2</label>
-           
-            <input type="text" class="form-control" id="lastName" formControlName="addressLine2"  placeholder="Enter your apartment or house number if needed">
-        </div>
-        <div class="mb-3">
-            <label for="number" class="form-label">City</label>
-           
-            <input type="text" class="form-control" id="number" formControlName="number"
-                placeholder="Enter your phone number">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">State</label>
-           
-            <input type="email" class="form-control" id="email" formControlName="email"
-                placeholder="Please enter valid email ">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Zip Code</label>
-           
-            <input type="text" class="form-control" id="email" formControlName="email"
-                placeholder="Please enter zip code">
-        </div>
+                <input type="text" class="form-control" id="firstName" formControlName="addressLine1"
+                    placeholder="Enter your street address" required>
+            </div>
+            <div class="mb-3">
+                <label for="lastName" class="form-label">Address 2</label>
 
-        <div class="d-flex flex-row justify-content-center"><button type="submit" class="btn btn-primary float-center" routerLink="/credentials">Next</button></div>
+                <input type="text" class="form-control" id="lastName" formControlName="addressLine2"
+                    placeholder="Enter your apartment or house number if needed">
+            </div>
+            <div class="mb-3">
+                <label for="number" class="form-label">City</label>
+
+                <input type="text" class="form-control" id="number" formControlName="number"
+                    placeholder="Enter your phone number">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">State</label>
+
+                <input type="email" class="form-control" id="email" formControlName="email"
+                    placeholder="Please enter valid email ">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Zip Code</label>
+
+                <input type="text" class="form-control" id="email" formControlName="email"
+                    placeholder="Please enter zip code">
+            </div>
+
+       
+        </form>
     </form>
-</div>
-<div class="tab-content">
+   
+<br>
+  
 
-    <form id="mailingAddressForm"  class=" form p-5 container tab-pane "[formGroup]="mailingAddressForm">
-        <div>
-            <p class="p-3 fs-5"> Mailing Address </p>
-        </div>
-        <div class="mb-3 ">
-            <label for="firstName" class="form-label">Address 1</label>
-           
-            <input type="text" class="form-control" id="firstName" formControlName="addressLine1" placeholder="Enter your street address" required>
-        </div>
-        <div class="mb-3">
-            <label for="lastName" class="form-label">Address 2</label>
-           
-            <input type="text" class="form-control" id="lastName" formControlName="addressLine2"  placeholder="Enter your apartment or house number if needed">
-        </div>
-        <div class="mb-3">
-            <label for="number" class="form-label">City</label>
-           
-            <input type="text" class="form-control" id="number" formControlName="number"
-                placeholder="Enter your phone number">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">State</label>
-           
-            <input type="email" class="form-control" id="email" formControlName="email"
-                placeholder="Please enter valid email ">
-        </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Zip Code</label>
-           
-            <input type="text" class="form-control" id="email" formControlName="email"
-                placeholder="Please enter zip code">
-        </div>
+   
+    </div>
 
-        
-    </form>
-
-<div class="d-flex flex-row justify-content-center"><button type="submit" class="btn btn-primary float-center" routerLink="/credentials">Next</button></div>
-
-
-
-</div>
+   
+    
+    <button type="submit" class="btn btn-primary position-absolute bottom-5" routerLink="/credentials">Next</button>

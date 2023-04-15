@@ -20,7 +20,7 @@ export class AppComponent {
 
    constructor(activatedRoute:ActivatedRoute) {
       this.activatedRoute = activatedRoute; 
-      // setTheme('bs5');
+     setTheme('bs5');
    }
 
 

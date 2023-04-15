@@ -1,0 +1,5 @@
+{
+    "emmet.optimizeStylesheetParsing": false,
+    "emmet.showAbbreviationSuggestions": false,
+    "markdown.preferredMdPathExtensionStyle": "removeExtension"
+}

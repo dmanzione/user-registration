@@ -35,7 +35,8 @@ import { AddressStepModule } from './modules/address-step/address-step.module';
 import { ContactInfoStepComponent } from './modules/contact-info-step/contact-info-step.component';
 import { ContactInfoStepModule } from './modules/contact-info-step/contact-info-step.module';
 import { CommonModule } from '@angular/common';
-
+import { ErrorpageComponent } from './modules/errorpage/errorpage.component';
+import { ErrorpageModule } from './modules/errorpage/errorpage.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -43,24 +44,19 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     BrowserModule,
-
-
-    
     BrowserAnimationsModule,
     HttpClientModule,
     RouterLink,
-    RouterModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-
     UserinfoModule,
     RegistrationModule,
-  
     LoginModule,
     HomeModule,
     AddressStepModule,
-    ContactInfoStepModule
+    ContactInfoStepModule,
+    
   ],
   exports: [
     RouterModule

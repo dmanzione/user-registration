@@ -6,12 +6,13 @@ import { RegistrationComponent } from './modules/registration/registration.compo
 import { AddressStepComponent } from './modules/address-step/address-step.component';
 import { ContactInfoStepComponent } from './modules/contact-info-step/contact-info-step.component';
 import { UserinfoComponent } from './modules/userinfo/userinfo.component';
+import { ErrorpageComponent } from './modules/errorpage/errorpage.component';
 
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-
+    pathMatch: 'full'
   },
 
   {
@@ -29,16 +30,11 @@ const routes: Routes = [
   {
     path: 'contact',
     component: ContactInfoStepComponent,
-
-
-
   },
   {
     path: 'credentials',
     component: UserinfoComponent,
   }
-
-
 
 ];
 
