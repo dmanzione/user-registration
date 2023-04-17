@@ -15,7 +15,7 @@ export class RegistrationComponent {
   personForm = new FormGroup({
     firstName: new FormControl<string>(
       this.stateTracker.personalInfo.firstName
-    ),
+    ,[Validators.required]),
     middleName: new FormControl<string>(
       this.stateTracker.personalInfo.middleName
     ),

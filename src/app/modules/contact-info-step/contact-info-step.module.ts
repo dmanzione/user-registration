@@ -10,6 +10,7 @@ import { HomeModule } from '../home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddressStepModule } from '../address-step/address-step.module';
 
+import { LoginModule } from '../login/login.module';
 
 import { RegistrationModule } from '../registration/registration.module';
 import { UserinfoModule } from '../userinfo/userinfo.module';

@@ -52,11 +52,13 @@ import { ErrorpageModule } from './modules/errorpage/errorpage.module';
     ReactiveFormsModule,
     UserinfoModule,
     RegistrationModule,
+
+
     LoginModule,
     HomeModule,
     AddressStepModule,
     ContactInfoStepModule,
-    
+
   ],
   exports: [
     RouterModule

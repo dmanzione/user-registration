@@ -10,3 +10,8 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.mask {
+    position:absolute;
+    background-color: rgb(84, 182, 217,0.6);
+    background-size:cover;
+}
